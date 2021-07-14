@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,46 +19,46 @@ function Nav() {
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <Link
-                    to="/home"
+                  <NavLink
+                    to="/"
                     className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Home 
-                  </Link>
+                  </NavLink>
 
-                  <Link
+                  <NavLink
                     to="/contact"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Contact
-                  </Link>
+                  </NavLink>
 
-                  <Link
-                    href="#"
+                  <NavLink
+                    to="/"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Pr
-                  </Link>
+                  </NavLink>
 
-                  <Link
-                    href="#"
+                  <NavLink
+                    to="/"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Calendar
-                  </Link>
+                  </NavLink>
 
-                  <Link
-                    to="/contact"
+                  <NavLink
+                    to="/about"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     About us 
-                  </Link>
+                  </NavLink>
                 </div>
               </div>
             </div>
             <div className="-mr-2 flex md:hidden">
               <button
-                onClick={() => setIsOpen(!isOpen)}
+                
                 type="button"
                 className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 aria-controls="mobile-menu"
@@ -115,40 +115,40 @@ function Nav() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a
-                  href="#"
+                <NavLink
+                 to="/"
                   className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Dashboard
-                </a>
+                </NavLink>
 
-                <a
-                  href="#"
+                <NavLink
+                  to="/"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Team
-                </a>
+                </NavLink>
 
-                <a
-                  href="#"
+                <NavLink
+                  to="/"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Projects
-                </a>
+                </NavLink>
 
-                <a
-                  href="#"
+                <NavLink
+                  to="/"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   About us
-                </a>
+                </NavLink>
 
-                <a
-                  href="#"
+                <NavLink
+                  to="/"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Contact us
-                </a>
+                </NavLink>
               </div>
             </div>
           )}
@@ -160,15 +160,7 @@ function Nav() {
           <h1 className="text-3xl font-bold text-gray-900">Home </h1>
         </div>
       </header>
-      <main>
-        <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-          {/* <!-- Replace with your content --> */}
-          <div className="px-4 py-6 sm:px-0">
-            <div className="border-4 border-dashed border-gray-200 rounded-lg h-96"></div>
-          </div>
-          {/* <!-- /End replace --> */}
-        </div>
-      </main>
+
     </div>
   );
 }
