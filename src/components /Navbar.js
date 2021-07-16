@@ -23,7 +23,7 @@ function Nav() {
                     to="/"
                     className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Home 
+                    Home
                   </NavLink>
 
                   <NavLink
@@ -51,14 +51,13 @@ function Nav() {
                     to="/about"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    About us 
+                    About us
                   </NavLink>
                 </div>
               </div>
             </div>
             <div className="-mr-2 flex md:hidden">
               <button
-                
                 type="button"
                 className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 aria-controls="mobile-menu"
@@ -116,7 +115,7 @@ function Nav() {
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <NavLink
-                 to="/"
+                  to="/"
                   className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Dashboard
@@ -160,7 +159,6 @@ function Nav() {
           <h1 className="text-3xl font-bold text-gray-900">Home </h1>
         </div>
       </header>
-
     </div>
   );
 }

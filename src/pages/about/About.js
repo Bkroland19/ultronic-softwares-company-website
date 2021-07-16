@@ -1,12 +1,7 @@
-
-
+import React from "react";
+import Card from "./Card";
 function About() {
-    return (
-        <div>
-            <h1>this about page</h1>
-        </div>
-    )
+  return <Card />;
 }
 
-export default About
-
+export default About;
