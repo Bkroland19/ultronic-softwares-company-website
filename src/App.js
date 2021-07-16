@@ -1,14 +1,14 @@
-import logo from './logo.svg';
+
 import './App.css';
 
-
+import ReactDOM from 'react-dom';
 
 import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link, Redirect
 } from "react-router-dom";
 
 import Navbar from'./components /Navbar';
@@ -19,7 +19,10 @@ function App() {
   return (
     <div className="App">
       <Router>
+
       <Navbar />
+      <main>
+     
         <Switch>
           <Route path ="/" exact>
             <Home />
@@ -31,7 +34,12 @@ function App() {
         <Route path ="/About">
           <About />
         </Route>
+
+        <Redirect />
+
         </Switch>
+      </main>
+       
       </Router>
 
 
