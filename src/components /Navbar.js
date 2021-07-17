@@ -13,7 +13,7 @@ function Nav() {
               <div className="flex-shrink-0">
                 <img
                   className="h-8 w-8"
-                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                  src="../../src/pages/images/logo.jpg"
                   alt="Workflow"
                 />
               </div>
@@ -27,31 +27,33 @@ function Nav() {
                   </NavLink>
 
                   <NavLink
-                    to="/contact"
+                    to="/about"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Contact
+                    About
                   </NavLink>
 
                   <NavLink
-                    to="/"
+                    to="/services"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Pr
+                    Services
                   </NavLink>
 
                   <NavLink
-                    to="/"
+                    to="/projects"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Calendar
+                    projects
                   </NavLink>
+
+
 
                   <NavLink
                     to="/about"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    About us
+                    About Us 
                   </NavLink>
                 </div>
               </div>
