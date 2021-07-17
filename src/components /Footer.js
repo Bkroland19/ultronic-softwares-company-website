@@ -16,7 +16,7 @@ function Footer() {
     let time = `${date}/${month}/${year}`;
 
     return (
-        <div className = "footer grid grid-flow-dense sm:text-sm">
+        <div className = "footer grid grid-flow-dense sm:text-sm align-items:center display:relative ">
            <div className =" mt-2 ">
               <h2 className ="mb-2 text-xl">About us</h2> 
               <p className ="text-sm "> 
