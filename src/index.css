@@ -3,10 +3,10 @@
 @tailwind utilities;
  
 
-@layer  components {
+ @layer  components {
    .footer {
         @apply  md:grid-cols-3 text-gray-300 bg-gray-800  
         py-2  space-x-2 pl-3 pr-1  ;
     }
     
-}
+} 

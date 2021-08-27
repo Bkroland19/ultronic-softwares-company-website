@@ -12,9 +12,9 @@ function Nav() {
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <img
-                  className="h-8 w-8"
-                  src="../../src/pages/images/logo.jpg"
-                  alt="Workflow"
+                  className="h-9 w-8"
+                  src="/assets/lo.jpg"
+                  alt="Ultronic"
                 />
               </div>
               <div className="hidden md:block">
@@ -157,11 +157,7 @@ function Nav() {
         </Transition>
       </nav>
 
-      <header className="bg-white shadow">
-        <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold text-gray-900">Home </h1>
-        </div>
-      </header>
+     
 
     </div>
   );
