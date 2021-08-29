@@ -1,9 +1,11 @@
+import CarouselContainer from "../../components /CarouselContainer";
+
 function Home() {
-    return (
-        <div>
-            <h1>this home page </h1>
-        </div>
-    )
+	return (
+		<div>
+			<CarouselContainer />
+		</div>
+	);
 }
 
-export default Home
+export default Home;
