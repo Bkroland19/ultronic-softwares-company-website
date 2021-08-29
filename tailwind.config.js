@@ -1,29 +1,48 @@
 module.exports = {
-  mode: "jit",
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    screens: {
-      xs: "475px",
-      sm: "640px",
-      // => @media (min-width: 640px) { ... }
-
-      md: "768px",
-      // => @media (min-width: 768px) { ... }
-
-      lg: "1024px",
-      // => @media (min-width: 1024px) { ... }
-
-      xl: "1280px",
-      // => @media (min-width: 1280px) { ... }
-
-      "2xl": "1536px",
-      // => @media (min-width: 1536px) { ... }
-    },
-    extend: {},
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+	mode: "jit",
+	purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+	darkMode: false, // or 'media' or 'class'
+	theme: {
+		// colors: {
+		//     transparent: 'transparent',
+		//     current: 'currentColor',
+		//     white: {
+		//         DEFAULT: '#ffffff',
+		//     },
+		//     green: {
+		//         light: '#6fcf97',
+		//         DEFAULT: '#27AE60',
+		//         dark: '#219653',
+		//         darker: '#1e874b',
+		//     },
+		//     red: {
+		//         light: '#FFEAEA',
+		//         DEFAULT: '#EB5757',
+		//         dark: '#C20D0D',
+		//     },
+		//     orange: {
+		//         light: '#FFEBDA',
+		//         DEFAULT: '#F66A0A',
+		//         dark: '#A04100',
+		//     },
+		//     primary: {
+		//         DEFAULT: '#24292E',
+		//     },
+		//     warning: {
+		//         DEFAULT: '#D1711C',
+		//     }
+		// },
+		extend: {
+			boxShadow: {
+				default: "0px 10px 20px rgba(150, 150, 187, 0.1)",
+			},
+			fontSize: {
+				"2rem": "2rem",
+			},
+		},
+	},
+	variants: {
+		extend: {},
+	},
+	plugins: [],
 };

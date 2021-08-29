@@ -13,7 +13,7 @@ import {
 
 import Navbar from'./components /Navbar';
 import Home from './pages/home/Home';
-import Contact from './pages/contact/Contact';
+import Contact from './pages/about/Contact';
 import About from './pages/about/About';
 import Footer from './components /Footer';
 import Services from './pages/services/Services';
@@ -31,16 +31,16 @@ function App() {
             <Home />
           </Route>
 
-        <Route path="/contact" exact>
+        <Route path="/contact" >
           <Contact />
         </Route>
-        <Route path ="/About" exact>
+        <Route path ="/About" >
           <About />
         </ Route>
-        <Route path="/services" exact>
+        <Route path="/services">
         <Services />
         </Route>
-        <Route path="/projects" exact>
+        <Route path="/projects">
           <Projects />
         </Route>
         <Redirect />
@@ -50,8 +50,8 @@ function App() {
        
       </Router>
 
-
-      <Footer/>
+ 
+     <Footer/>  
     </div>
   );
 }

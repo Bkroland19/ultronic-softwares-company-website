@@ -1,8 +1,14 @@
+import React from "react"
+import Web from "./Web"
+import  Tech from    "./Tech"
+import  AppDev  from    "./AppDev"
 function services() {
     return (
         <div>
-            <h1>this service page </h1>
-        </div>
+           <Web/>
+           <AppDev/>
+           <Tech/>
+      </div>
     )
 }
 
